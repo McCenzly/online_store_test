@@ -63,13 +63,92 @@
   requirement: |
     Доступность сайта на различных устройствах
   prerequisites: |
-    Окрыта главная страница сайта  
-  test-data: |
-    Тестовые данные
-    Логин = ilona Пароль = password
+    Desktop, Windows 10
   steps:
-    - Вводим логин
-    - Вводим пароль
-    - Нажимаем кнопку "Войти"
+    - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
   expected-result: |
-    Пользователь должен попасть на главную страницу
+    Сайт доступен на данном устройстве
+
+- summary: |
+    Совместимость устройств
+  requirement: |
+    Доступность сайта на различных устройствах
+  prerequisites: |
+    Android (модели из DevTools)
+  steps:
+    - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
+  expected-result: |
+    Сайт доступен на данном устройстве
+
+- summary: |
+    Совместимость устройств
+  requirement: |
+    Доступность сайта на различных устройствах
+  prerequisites: |
+    iOS (модели из DevTools)
+  steps:
+    - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
+  expected-result: |
+    Сайт доступен на данном устройстве
+    
+- summary: |
+    Совместимость браузеров
+  requirement: |
+    Доступность сайта при входе с разных браузеров
+  prerequisites: |
+    Windows 10 pro (64-bit)
+  steps:
+    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в GoogleChrome ver.124.0 (64-bit)
+    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в MozillaFirefox ver.124.0 (64-bit)
+    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в YandexBrowser ver.14.12 (64-bit)
+    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в Safari ver.5.1 (64-bit)
+  expected-result: |
+    Корректная работа сайта на данных версиях браузеров
+
+- summary: |
+   Безопасность сайта
+  requirement: |
+    Сайт должен быть безопасным и защищать данные пользователя
+  prerequisites: |
+    Пользователь должен быть авторизован
+  steps:
+    - Проверяем протокол
+    - Проверяем в DevTools LocalStorage 
+    - Проверка на наличие SQL-инъекций
+    - Проверка на XSS
+    - Проверка Man-in-the-Middle
+  expected-result: |
+    Сайт безопасен для использования и защищает данные пользователя
+
+- summary: |
+    Шрифты
+  requirement: |
+    На сайте должны быть различные шрифты для удобства сёрфинга
+  prerequisites: |
+    Открыта главная страница сайта
+  expected-result: |
+    Имеются различные шрифты
+
+- summary: |
+    Изображения без искажения
+  requirement: |
+    -  Сайт должен иметь качественные изображения без искажения 
+  prerequisites: |
+    Открыта главная страница сайта
+  expected-result: |
+    Все изображения смсотрятся гармонично без искажений
+    
+- summary: |
+    Единый формат изображений
+  requirement: |
+    -  Сайт должен иметь единый формат изображений в списке товаров
+  steps: |
+    - Открываем главную страницу сайта
+    - Проверяем через DevTools формат каждого изображения
+    - Кликаем по каждому товару
+    - Проверяем формат изображений в каждой карточке товара
+  expected-result: |
+    Все изображения имеют одинаковый формат
+
+    
+
