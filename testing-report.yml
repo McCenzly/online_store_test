@@ -1,0 +1,87 @@
+- summary: |
+    Добавление товаров в корзину и просмотр содержимого корзины
+status: pass
+
+- summary: |
+    Просмотр товаров и подробной информации о товаре
+status: pass
+
+- summary: |
+    Фильтр товаров
+status: pass
+
+- summary: |
+    Фильтр по ключевому слову
+status: pass
+
+- summary: |
+    Фильтр по категории
+status: pass
+
+- summary: |
+    Совместимость устройств на базе Windows
+status: pass
+
+- summary: |
+    Совместимость устройств на базе Android ???
+status: pass
+
+- summary: |
+    Совместимость устройств на базе iOS ???
+status: pass
+
+- summary: |
+    Совместимость браузеров ???
+status: pass
+
+- summary: |
+    Безопасность сайта
+status: pass
+
+- summary: |
+    Шрифты ???
+status: pass
+
+- summary: |
+    Изображения без искажения ???
+status: pass
+
+- summary: |
+    Единый формат изображений ???
+status: pass
+
+- summary: |
+    Конвертация валюты ???
+status: pass
+
+- summary: |
+   Выбор количества покупаемого товара ???
+status: pass
+
+- summary: |
+   Кнопки навигации ???
+status: pass
+
+- summary: |
+   Более двух изображений
+status: fail
+
+- summary: |
+   Остаток товара
+status: fail
+
+- summary: |
+   Перевод страниц
+status: fail
+
+- summary: |
+   Переход на главную страницу магазина
+status: fail
+
+- summary: |
+   Сброс фильтра
+status: fail
+
+- summary: |
+   Сброс фильтра категорий без перезагрузки страницы
+status: fail
