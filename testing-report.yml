@@ -23,20 +23,22 @@ status: pass
 status: pass
 
 - summary: |
-    Совместимость устройств на базе Android ???
+    Совместимость устройств на базе Android
 status: pass
 
 - summary: |
-    Совместимость устройств на базе iOS ???
+    Совместимость устройств на базе iOS
 status: pass
 
 - summary: |
-    Совместимость браузеров ???
-status: pass
+    Совместимость браузеров
+status: fail
+comment: safari, yandex.
 
 - summary: |
-    Безопасность сайта ???
-status: pass
+    Безопасность сайта
+status: fail
+comment: XSS
 
 - summary: |
     Шрифты
@@ -47,7 +49,7 @@ status: fail
 status: fail
 
 - summary: |
-    Единый формат изображений 
+    Единый размер изображений 
 status: fail
 
 - summary: |
@@ -60,7 +62,7 @@ status: fail
 
 - summary: |
    Кнопки навигации
-status: fail
+status: pass
 
 - summary: |
    Более двух изображений
@@ -79,9 +81,9 @@ status: fail
 status: fail
 
 - summary: |
-   Сброс фильтра
+   Сброс фильтра категорий без перезагрузки страницы
 status: fail
 
 - summary: |
-   Сброс фильтра категорий без перезагрузки страницы
+   Размер скидки
 status: fail
