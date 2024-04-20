@@ -36,6 +36,14 @@ status: fail
 comment: safari, yandex.
 
 - summary: |
+    Мобильная версия для iOS
+status: fail
+
+- summary: |
+    Мобильная версия для Android
+status: fail
+
+- summary: |
     Безопасность сайта
 status: fail
 comment: XSS
@@ -86,4 +94,8 @@ status: fail
 
 - summary: |
    Размер скидки
+status: fail
+
+- summary: |
+   Иконки страны языка
 status: fail
