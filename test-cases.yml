@@ -90,6 +90,28 @@
     - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
   expected-result: |
     Сайт доступен на данном устройстве
+
+- summary: |
+    Мобильная версия сайта
+  requirement: |
+    Cайт должен иметь мобильную версию
+  prerequisites: |
+    iOS
+  steps:
+    - Открываем в браузере iOS [сайт](https://hexlet-products-store.vercel.app/)
+  expected-result: |
+    Сайт доступен на данном устройстве
+
+- summary: |
+    Мобильная версия сайта
+  requirement: |
+    Cайт должен иметь мобильную версию
+  prerequisites: |
+    Android
+  steps:
+    - Открываем в браузере Android [сайт](https://hexlet-products-store.vercel.app/)
+  expected-result: |
+    Сайт доступен на данном устройстве
     
 - summary: |
     Совместимость браузеров
@@ -251,3 +273,14 @@
     -  На сайте должен быть указан размер скидки в процентах
   expected-result: |
     В графе "Цена" указан размер скидки в процентах 
+
+- summary: |
+    Иконки стран языка сайта
+  requirement: |
+    -  В выборе языка должны быть иконки флагов страны данного языка
+  steps: |
+    - Открываем главную страницу сайта
+    - Нажимаем "Язык"
+  expected-result: |
+    Иконки корректно отображаются
+
