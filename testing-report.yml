@@ -35,32 +35,32 @@ status: pass
 status: pass
 
 - summary: |
-    Безопасность сайта
+    Безопасность сайта ???
 status: pass
 
 - summary: |
-    Шрифты ???
-status: pass
+    Шрифты
+status: fail
 
 - summary: |
-    Изображения без искажения ???
-status: pass
+    Изображения без искажения
+status: fail
 
 - summary: |
-    Единый формат изображений ???
-status: pass
+    Единый формат изображений 
+status: fail
 
 - summary: |
-    Конвертация валюты ???
-status: pass
+    Конвертация валюты 
+status: fail
 
 - summary: |
-   Выбор количества покупаемого товара ???
-status: pass
+   Выбор количества покупаемого товара 
+status: fail
 
 - summary: |
-   Кнопки навигации ???
-status: pass
+   Кнопки навигации
+status: fail
 
 - summary: |
    Более двух изображений
