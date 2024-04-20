@@ -31,6 +31,10 @@ status: pass
 status: pass
 
 - summary: |
+    Обработка большого количества траффика
+status: fail
+
+- summary: |
     Совместимость браузеров
 status: fail
 comment: safari, yandex.
