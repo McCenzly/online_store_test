@@ -7,10 +7,10 @@
   steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
     2. Открываем DevTools
-    3. Проверяем скорость загрузки страницы с "No throtting"
-    4. Проверяем скорость загрузки страницы с "Fast 3G"
-    5. Проверяем скорость загрузки старницы с "Slow 3G"
-    6. Проверяем скорость загрузки страницы с "Regular 4G"
+    3. Проверить скорость загрузки страницы с "No throtting"
+    4. Проверить скорость загрузки страницы с "Fast 3G"
+    5. Проверить скорость загрузки старницы с "Slow 3G"
+    6. Проверить скорость загрузки страницы с "Regular 4G"
   expected-result: |
     Страница загружается быстро
   actual-result: |
@@ -22,7 +22,7 @@
     Yandex Browser 14.12 (64-bit)
     Windows 11 pro
   steps-to-reproduce: |
-    1. Открываем Yandex Browser
+    1. Открыть Yandex Browser
     2. Зайти на страницу https://hexlet-products-store.vercel.app/
   expected-result: |
     Сайт открылся, видна вся необходимая информация
@@ -35,7 +35,7 @@
     Safari Browser 5.1 (64-bit)
     Windows 11 pro
   steps-to-reproduce: |
-    1. Открываем Safari
+    1. Открыть Safari
     2. Зайти на страницу https://hexlet-products-store.vercel.app/
   expected-result: |
     Сайт открылся, видна вся необходимая информация
@@ -48,12 +48,56 @@
     Safari Browser 5.1 (64-bit)
     Windows 11 pro
   steps-to-reproduce: |
-    1. Открываем Safari
+    1. Открыть Safari
     2. Зайти на страницу https://hexlet-products-store.vercel.app/
   expected-result: |
     Сайт открылся, видна вся необходимая информация
   actual-result: |
     Сайт не открылся
+
+- summary: |
+    Сайт не работает на устройстве Android
+  environment: |
+    Realme 8; Galaxy Note 3; Galaxy Note II; Galaxy S III; Galaxy S8; Galaxy S9+; Galaxy Tab S4; Galaxy S8+; Galaxy S20 Ultra; Surface Pro 7; Surface Duo; Galaxy Z Fold 5; ASUS Zenbook Fold; Galaxy A51/71; Galaxy S5
+    Android ver. 13
+    Google Chrome 123.0.6312.120
+  steps-to-reproduce: |
+    1. Открыть браузер Google Chrome на устройстве Android
+    2. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт открылся, видна вся необходимая информация, верстка адаптивна
+  actual-result: |
+    Мобильная верстка сайта не адаптивна под устройство Android
+
+- summary: |
+    Сайт не работает на устройстве iOs
+  environment: |
+    iPhone SE; iPhone XR; iPhone 12 Pro; iPhone 14 Pro Max; iPhone; iPad Mini; iPad Air;
+    iOs ver. 17.4.1.
+    Google Chrome 123.0.6312.120
+  steps-to-reproduce: |
+    1. Открыть браузер Google Chrome на устройстве iOS
+    2. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт открылся, видна вся необходимая информация, верстка адаптивна
+  actual-result: |
+    Мобильная верстка сайта не адаптивна под устройство iOS
+
+    - summary: |
+    
+  environment: |
+    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Linux 22.04
+  steps-to-reproduce: |
+    1. Зайти на страницу логина https://runit.hexlet.ru/login
+    2. Нажать ссылку «Не помню пароль»
+    3. Ввести почту и нажать «Восстановить пароль»
+  expected-result: |
+    На странице формы будет сообщение с просьбой проверить почту
+    На почту придет письмо со ссылкой на восстановление пароля
+  actual-result: |
+    На странице ничего не происходит
+    В консоли браузера в Devtools выводится почта
 
     
 
