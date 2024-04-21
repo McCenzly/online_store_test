@@ -101,28 +101,6 @@
     - Проверяем через DevTools скорость загрузки элементов страницы на разных сетях передачи данных
   expected-result: |
     Сайт обрабатывает информацию быстро
-
-- summary: |
-    Мобильная версия сайта
-  requirement: |
-    Cайт должен иметь мобильную версию
-  prerequisites: |
-    iOS
-  steps:
-    - Открываем в браузере iOS [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
-    Сайт доступен на данном устройстве
-
-- summary: |
-    Мобильная версия сайта
-  requirement: |
-    Cайт должен иметь мобильную версию
-  prerequisites: |
-    Android
-  steps:
-    - Открываем в браузере Android [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
-    Сайт доступен на данном устройстве
     
 - summary: |
     Совместимость браузеров
@@ -167,6 +145,28 @@
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в Safari ver.5.1 (64-bit)
   expected-result: |
     Корректная работа сайта на данных версиях браузеров
+
+    - summary: |
+    Мобильная версия сайта
+  requirement: |
+    Cайт должен иметь мобильную версию
+  prerequisites: |
+    iOS
+  steps:
+    - Открываем в браузере iOS [сайт](https://hexlet-products-store.vercel.app/)
+  expected-result: |
+    Сайт доступен на данном устройстве
+
+- summary: |
+    Мобильная версия сайта
+  requirement: |
+    Cайт должен иметь мобильную версию
+  prerequisites: |
+    Android
+  steps:
+    - Открываем в браузере Android [сайт](https://hexlet-products-store.vercel.app/)
+  expected-result: |
+    Сайт доступен на данном устройстве
 
 - summary: |
    Безопасность сайта
