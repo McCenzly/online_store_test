@@ -36,8 +36,19 @@ status: fail
 
 - summary: |
     Совместимость браузеров
+status: pass
+
+- summary: |
+    Совместимость браузеров
+status: pass
+
+- summary: |
+    Совместимость браузеров
 status: fail
-comment: safari, yandex.
+
+- summary: |
+    Совместимость браузеров
+status: fail
 
 - summary: |
     Мобильная версия для iOS
