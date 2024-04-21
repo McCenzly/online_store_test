@@ -127,13 +127,43 @@
 - summary: |
     Совместимость браузеров
   requirement: |
-    Доступность сайта при входе с разных браузеров
+    Доступность сайта в GoogleChrome
   prerequisites: |
     Windows 10 pro (64-bit)
   steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в GoogleChrome ver.124.0 (64-bit)
+  expected-result: |
+    Корректная работа сайта на данных версиях браузеров
+
+- summary: |
+    Совместимость браузеров
+  requirement: |
+    Доступность сайта в MozillaFirefox
+  prerequisites: |
+    Windows 10 pro (64-bit)
+  steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в MozillaFirefox ver.124.0 (64-bit)
+  expected-result: |
+    Корректная работа сайта на данных версиях браузеров
+
+- summary: |
+    Совместимость браузеров
+  requirement: |
+    Доступность сайта в YandexBrowser
+  prerequisites: |
+    Windows 10 pro (64-bit)
+  steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в YandexBrowser ver.14.12 (64-bit)
+  expected-result: |
+    Корректная работа сайта на данных версиях браузеров
+
+- summary: |
+    Совместимость браузеров
+  requirement: |
+    Доступность сайта в Safari
+  prerequisites: |
+    Windows 10 pro (64-bit)
+  steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в Safari ver.5.1 (64-bit)
   expected-result: |
     Корректная работа сайта на данных версиях браузеров
