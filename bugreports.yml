@@ -1,0 +1,60 @@
+---
+- summary: |
+    Сайт долго загружает страницы
+  environment: |
+    Google Chrome 124.0.6367.60 (64-bit)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Открываем DevTools
+    3. Проверяем скорость загрузки страницы с "No throtting"
+    4. Проверяем скорость загрузки страницы с "Fast 3G"
+    5. Проверяем скорость загрузки старницы с "Slow 3G"
+    6. Проверяем скорость загрузки страницы с "Regular 4G"
+  expected-result: |
+    Страница загружается быстро
+  actual-result: |
+    Задержка вывода products?skip=0 658ms
+
+- summary: |
+    Сайт не работает в браузере Yandex
+  environment: |
+    Yandex Browser 14.12 (64-bit)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Открываем Yandex Browser
+    2. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт открылся, видна вся необходимая информация
+  actual-result: |
+    Сайт не открылся
+
+- summary: |
+    Сайт не работает в браузере Safari
+  environment: |
+    Safari Browser 5.1 (64-bit)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Открываем Safari
+    2. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт открылся, видна вся необходимая информация
+  actual-result: |
+    Сайт не открылся
+
+- summary: |
+    Сайт не работает в браузере Safari
+  environment: |
+    Safari Browser 5.1 (64-bit)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Открываем Safari
+    2. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Сайт открылся, видна вся необходимая информация
+  actual-result: |
+    Сайт не открылся
+
+    
+
+    
