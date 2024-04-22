@@ -67,7 +67,15 @@ status: fail
 status: fail
 
 - summary: |
+    Ссылка на категорию в карточке товара
+status: fail
+
+- summary: |
     Изображения без искажения
+status: fail
+
+- summary: |
+    Выбор изображения в карточке товара
 status: fail
 
 - summary: |
@@ -104,4 +112,8 @@ status: fail
 
 - summary: |
    Иконки страны языка
+status: fail
+
+- summary: |
+    Кнопка бренда магазина
 status: fail
