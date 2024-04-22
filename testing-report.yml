@@ -103,9 +103,5 @@ status: fail
 status: fail
 
 - summary: |
-   Размер скидки
-status: fail
-
-- summary: |
    Иконки страны языка
 status: fail
