@@ -43,19 +43,6 @@
     Сайт не открылся
 
 - summary: |
-    Сайт не работает в браузере Safari
-  environment: |
-    Safari Browser 5.1 (64-bit)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Открыть Safari
-    2. Зайти на страницу https://hexlet-products-store.vercel.app/
-  expected-result: |
-    Сайт открылся, видна вся необходимая информация
-  actual-result: |
-    Сайт не открылся
-
-- summary: |
     Сайт не работает на устройстве Android
   environment: |
     Realme 8; Galaxy Note 3; Galaxy Note II; Galaxy S III; Galaxy S8; Galaxy S9+; Galaxy Tab S4; Galaxy S8+; Galaxy S20 Ultra; Surface Pro 7; Surface Duo; Galaxy Z Fold 5; ASUS Zenbook Fold; Galaxy A51/71; Galaxy S5
@@ -83,21 +70,169 @@
   actual-result: |
     Мобильная верстка сайта не адаптивна под устройство iOS
 
-    - summary: |
-    
+- summary: |
+    Сайт не безопасен
   environment: |
-    Google Chrome   107.0.5304.121 (Официальная сборка) (64 бит)
-    ОС Linux 22.04
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
   steps-to-reproduce: |
-    1. Зайти на страницу логина https://runit.hexlet.ru/login
-    2. Нажать ссылку «Не помню пароль»
-    3. Ввести почту и нажать «Восстановить пароль»
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Проверяем протокол защиты
+    3. Проверяем в DevTools LocalStorage 
+    4. Проверяем на наличие SQL-инъекций
+    5. Проверка на XSS
+    6. Проверка Man-in-the-Middle
   expected-result: |
-    На странице формы будет сообщение с просьбой проверить почту
-    На почту придет письмо со ссылкой на восстановление пароля
+    Сайт безопасен, данные пользователя под защитой.
   actual-result: |
-    На странице ничего не происходит
-    В консоли браузера в Devtools выводится почта
+    Поле фильтрования цены имеет Cross-Site Scripting атаку.
+
+- summary: |
+    Оформление названия и описания товаров не в одном стиле
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Проверяем написание названий и описаний товаров во всех карточках
+  expected-result: |
+    Сайт имеет названия и описания товаров в одном стиле
+  actual-result: |
+    Названия и описания товаров не в одном стиле, много ошибок пунктуации.
+
+- summary: |
+    Изображения искажены
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Проверить все изображения на искажения
+  expected-result: |
+    Все изображения без искажений
+  actual-result: |
+    Многие карточки товара имеют искажения изображений
+
+- summary: |
+    Валюта не конвертируется при выборе Русского языка
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Поменять язык на русский
+  expected-result: |
+    Сайт перевел цену товара из долларов США в российские рубли согласно актуального курса
+  actual-result: |
+    Цена товара осталась в долларах США
+
+- summary: |
+    В корзине нельзя выбрать количество покупаемого товара
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Добавить товар в корзину
+    3. Выбрать количество товара от двух и более
+  expected-result: |
+    Есть возможность выбрать количество товара
+  actual-result: |
+    Количество товара нельзя выбрать находясь в корзине
+
+- summary: |
+    Некоторые карточки товара имеют только одно изображение
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Проверить все карточки товаров 
+  expected-result: |
+    Каротчки товара имеют от двух изображений
+  actual-result: |
+    Некоторые карточки товара имеют одно изображение
+
+- summary: |
+    После покупки остаток товара на карточке не изменился 
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Добавить товар в корзину
+    3. Нажать "Оформить заказ"
+    4. Проверить остаток товара в карточке товара
+  expected-result: |
+    Остаток товара уменьшился на количество купленного товара пользователем
+  actual-result: |
+    Остаток товара остался неизменнным
+
+- summary: |
+    Тексты не переводятся при переводе языка с английского на русский
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Переводим язык с английского на русский
+    3. Проверяем все ли тексты перевелись
+  expected-result: |
+    Все тексты перевелись на русский язык
+  actual-result: |
+    На русский язык перевелись только названия кнопок навигации по сайту
+
+- summary: |
+    При нажатии на кнопку "Магазин" сайт не переходит на главную страницу
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать "Следующая"
+    3. Нажать "Магазин"
+  expected-result: |
+    Сайт перешел на главную страницу
+  actual-result: |
+    Сайт никак не отреагировал на нажатие
+
+- summary: |
+    Невозможно сбросить выбранную категорию без перезагрузки страницы
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Выбрать в выпадающем меню категорию товаров
+    3. Сбрасываем фильтр
+  expected-result: |
+    Сайт сбросил фильтр
+  actual-result: |
+    Сайт сбррасывает фильтр категории только при перезагрузке страницы. Отсутствие кнопки "Сброс категории"
+
+- summary: |
+    Не указан размер скидки в процентах
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  expected-result: |
+    Размер скидки на сайте указан в процентах
+  actual-result: |
+    Размер скидки в процентах не указан
+
+- summary: |
+    Отсутствует иконка английского языка в меню выбора языка
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать на выпадающее меню выбора языка
+  expected-result: |
+    Все иконки отображаются корректно
+  actual-result: |
+    Иконка Английского языка отсутствует
+    
 
     
 
