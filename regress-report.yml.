@@ -1,0 +1,117 @@
+test-cases:
+  - summary: |
+      Обработка большого количества траффика
+    status: pass
+
+  - summary: |
+    Совместимость с браузером Yandex Browser
+    status: fail
+
+  - summary: |
+      Совместимость с браузером Safari
+    status: fail
+
+  - summary: |
+      Мобильная версия для iOS
+    status: pass
+
+  - summary: |
+      Мобильная версия для Android
+    status: pass
+
+  - summary: |
+      Безопасность сайта
+    status: fail
+
+  - summary: |
+      Единые стили названий и описаний товаров
+    status: fail
+
+   - summary: |
+      Ссылка на категорию в карточке товара
+    status: pass
+
+  - summary: |
+      Изображения без искажения
+    status: pass
+
+  - summary: |
+      Выбор изображения в карточке товара
+    status: pass
+
+  - summary: |
+      Конвертация валюты 
+    status: fail
+
+  - summary: |
+      Выбор количества покупаемого товара 
+    status: fail
+
+  - summary: |
+      Более двух изображений
+    status: fail
+
+  - summary: |
+     Остаток товара
+    status: fail
+
+  - summary: |
+     Перевод страниц
+    status: fail
+
+  - summary: |
+     Переход на главную страницу магазина
+    status: pass
+
+  - summary: |
+     Сброс фильтра категорий без перезагрузки страницы
+    status: pass
+
+  - summary: |
+     Размер скидки
+    status: pass
+
+  - summary: |
+     Иконки страны языка
+    status: fail
+
+  - summary: |
+     Кнопка бренда магазина
+    status: pass
+
+bugreports:
+  - summary: |
+      Карточки товаров отображаются некорректно
+    environment: |
+     
+    steps-to-reproduce: |
+      1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Выбрать чек-бокс "Golden"
+      3. Выбрать чек-бокс "Boho decor"
+      4. Выбрать чек-бокс "Dry Rose"
+      5. Выбрать чек-бокс "Baking Food Items"
+      6. Выбрать чек-бокс "Saaf & Khaas"
+      7. Выбрать чек-бокс "Lord - Al-Rehab"
+      8. Выбрать чек-бокс "Royal_Mirage"
+      9. Выбрать чек-бокс "Infinix"
+      10. Выбрать чек-бокс "Oppo"
+    expected-result: |
+      Карточка товара отображается корректно
+    actual-result: |
+      Карточка товара отображается не корректно 
+
+bugreports:
+  - summary: |
+      При сбросе фильтра категории перестают работать чек-боксы фильтров
+    environment: |
+      Google Chrome  123.0.6312.120 (64 бит)
+      Windows 11 pro
+    steps-to-reproduce: |
+      1. Выбираем лююбой фильтр категории
+      2. Сбрасываем фильтр категории
+      3. Кликаем любой чек-бокс
+    expected-result: |
+      Чек-бокс "Фильтр" работает корректно
+    actual-result: |
+      Чек-бокс "Фильтр" не работает
+
