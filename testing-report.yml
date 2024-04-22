@@ -61,18 +61,13 @@ status: fail
 - summary: |
     Безопасность сайта
 status: fail
-comment: XSS
 
 - summary: |
-    Шрифты
+    Единые стили названий и описаний товаров
 status: fail
 
 - summary: |
     Изображения без искажения
-status: fail
-
-- summary: |
-    Единый размер изображений 
 status: fail
 
 - summary: |
