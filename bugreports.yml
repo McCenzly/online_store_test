@@ -101,6 +101,20 @@
     Названия и описания товаров не в одном стиле, много ошибок пунктуации.
 
 - summary: |
+    Ссылка на категорию в карточке товара не работает
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Кликаем на ссылку категории данного товара
+  expected-result: |
+    Ссылка кликабельна, сайт открывает фильтр по выбранной категории
+  actual-result: |
+    Ссылка не кликабельна.
+
+
+- summary: |
     Изображения искажены
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
@@ -113,6 +127,20 @@
   actual-result: |
     Многие карточки товара имеют искажения изображений
 
+- summary: |
+    Изображения в карточке товара не выбираются при клике на них
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Зайти в карточку любого товара
+    3. Кликнуть на все изображения
+  expected-result: |
+    Все изображения кликабельны
+  actual-result: |
+    Изображения не кликабельны
+    
 - summary: |
     Валюта не конвертируется при выборе Русского языка
   environment: |
@@ -211,16 +239,6 @@
     Сайт сбррасывает фильтр категории только при перезагрузке страницы. Отсутствие кнопки "Сброс категории"
 
 - summary: |
-    Не указан размер скидки в процентах
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  expected-result: |
-    Размер скидки на сайте указан в процентах
-  actual-result: |
-    Размер скидки в процентах не указан
-
-- summary: |
     Отсутствует иконка английского языка в меню выбора языка
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
@@ -233,7 +251,18 @@
   actual-result: |
     Иконка Английского языка отсутствует
     
-
+- summary: |
+    Кнопка бренда магазина "Hexlet Store" не перенаправляет на главную страницу
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать "Hexlet Store"
+  expected-result: |
+    Сайт перешел на главную страницу
+  actual-result: |
+    Сайт не реагирует на кнопку "Hexlet Store"
     
 
     
