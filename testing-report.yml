@@ -35,19 +35,19 @@ status: pass
 status: fail
 
 - summary: |
-    Совместимость браузеров
+    Совместимость с браузером Google Chrome
 status: pass
 
 - summary: |
-    Совместимость браузеров
+    Совместимость с браузером Mozilla Firefox
 status: pass
 
 - summary: |
-    Совместимость браузеров
+    Совместимость с браузером Yandex Browser
 status: fail
 
 - summary: |
-    Совместимость браузеров
+    Совместимость с браузером Safari
 status: fail
 
 - summary: |
