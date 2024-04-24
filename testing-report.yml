@@ -1,123 +1,123 @@
 - summary: |
     Добавление товаров в корзину и просмотр содержимого корзины
-status: pass
+  status: pass
 
 - summary: |
     Просмотр товаров и подробной информации о товаре
-status: pass
+  status: pass
 
 - summary: |
     Фильтр товаров
-status: pass
+  status: pass
 
 - summary: |
     Фильтр по ключевому слову
-status: pass
+  status: pass
 
 - summary: |
     Фильтр по категории
-status: pass
+  status: pass
 
 - summary: |
     Совместимость устройств на базе Windows
-status: pass
+  status: pass
 
 - summary: |
     Совместимость устройств на базе Android
-status: pass
+  status: pass
 
 - summary: |
     Совместимость устройств на базе iOS
-status: pass
+  status: pass
 
 - summary: |
     Обработка большого количества траффика
-status: fail
+  status: fail
 
 - summary: |
     Совместимость с браузером Google Chrome
-status: pass
+  status: pass
 
 - summary: |
     Совместимость с браузером Mozilla Firefox
-status: pass
+  status: pass
 
 - summary: |
     Совместимость с браузером Yandex Browser
-status: fail
+  status: fail
 
 - summary: |
     Совместимость с браузером Safari
-status: fail
+  status: fail
 
 - summary: |
     Мобильная версия для iOS
-status: fail
+  status: fail
 
 - summary: |
     Мобильная версия для Android
-status: fail
+  status: fail
 
 - summary: |
     Безопасность сайта
-status: fail
+  status: fail
 
 - summary: |
     Верстка сайта
-status: fail
+  status: fail
 
 - summary: |
     Единые стили названий и описаний товаров
-status: fail
+  status: fail
 
 - summary: |
     Ссылка на категорию в карточке товара
-status: fail
+  status: fail
 
 - summary: |
     Изображения без искажения
-status: fail
+  status: fail
 
 - summary: |
     Выбор изображения в карточке товара
-status: fail
+  status: fail
 
 - summary: |
     Конвертация валюты 
-status: fail
+  status: fail
 
 - summary: |
    Выбор количества покупаемого товара 
-status: fail
+  status: fail
 
 - summary: |
    Кнопки навигации
-status: pass
+  status: pass
 
 - summary: |
    Более двух изображений
-status: fail
+  status: fail
 
 - summary: |
    Остаток товара
-status: fail
+  status: fail
 
 - summary: |
    Перевод страниц
-status: fail
+  status: fail
 
 - summary: |
    Переход на главную страницу магазина
-status: fail
+  status: fail
 
 - summary: |
    Сброс фильтра категорий без перезагрузки страницы
-status: fail
+  status: fail
 
 - summary: |
    Иконки страны языка
-status: fail
+  status: fail
 
 - summary: |
     Кнопка бренда магазина
-status: fail
+  status: fail
