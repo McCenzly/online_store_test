@@ -83,7 +83,6 @@ bugreports:
   - summary: |
       Карточки товаров отображаются некорректно
     environment: |
-     
     steps-to-reproduce: |
       1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Выбрать чек-бокс "Golden"
@@ -113,4 +112,3 @@ bugreports:
       Чек-бокс "Фильтр" работает корректно
     actual-result: |
       Чек-бокс "Фильтр" не работает
-
