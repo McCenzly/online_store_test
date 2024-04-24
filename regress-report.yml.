@@ -72,10 +72,6 @@ test-cases:
     status: pass
 
   - summary: |
-     Размер скидки
-    status: pass
-
-  - summary: |
      Иконки страны языка
     status: fail
 
