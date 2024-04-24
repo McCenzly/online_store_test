@@ -23,6 +23,10 @@ test-cases:
       Безопасность сайта
     status: fail
 
+- summary: |
+      Верстка сайта
+    status: pass
+
   - summary: |
       Единые стили названий и описаний товаров
     status: fail
