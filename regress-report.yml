@@ -78,6 +78,7 @@ test-cases:
   - summary: |
      Кнопка бренда магазина
     status: pass
+    
 ---
 
 bugreports:
