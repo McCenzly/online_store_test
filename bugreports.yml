@@ -87,7 +87,7 @@
   actual-result: |
     Поле фильтрования цены имеет Cross-Site Scripting атаку
 
-    - summary: |
+- summary: |
     Верстка сайта выглядит выглядит неудобно для просмотра и использования
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
