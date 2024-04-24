@@ -4,7 +4,7 @@ test-cases:
     status: pass
 
   - summary: |
-    Совместимость с браузером Yandex Browser
+      Совместимость с браузером Yandex Browser
     status: fail
 
   - summary: |
@@ -23,7 +23,7 @@ test-cases:
       Безопасность сайта
     status: fail
 
-- summary: |
+  - summary: |
       Верстка сайта
     status: pass
 
@@ -31,7 +31,7 @@ test-cases:
       Единые стили названий и описаний товаров
     status: fail
 
-   - summary: |
+  - summary: |
       Ссылка на категорию в карточке товара
     status: pass
 
@@ -104,14 +104,13 @@ bugreports:
     actual-result: |
       Карточка товара отображается не корректно 
 
-bugreports:
   - summary: |
       При сбросе фильтра категории перестают работать чек-боксы фильтров
     environment: |
       Google Chrome  123.0.6312.120 (64 бит)
       Windows 11 pro
     steps-to-reproduce: |
-      1. Выбираем лююбой фильтр категории
+      1. Выбираем любой фильтр категории
       2. Сбрасываем фильтр категории
       3. Кликаем любой чек-бокс
     expected-result: |
