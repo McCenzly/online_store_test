@@ -83,6 +83,8 @@ bugreports:
   - summary: |
      Карточки товаров отображаются некорректно
     environment: |
+      Google Chrome  123.0.6312.120 (64 бит)
+      Windows 11 pro
     steps-to-reproduce: |
       1. Зайти на страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       2. Выбрать чек-бокс "Golden"
