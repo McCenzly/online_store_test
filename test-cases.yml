@@ -1,353 +1,352 @@
 ---
 - summary: |
     Добавление товаров в корзину и просмотр содержимого корзины
-  requirement: |
+   requirement: |
     При добавлении товара в корзину товар должен отображается в корзине
-  prerequisites: |
+   prerequisites: |
     Пользователь должен быть авторизован
-  steps:
+   steps:
     - Нажимаем кнопку "В корзину"
     - Нажимаем кнопку "Корзина"
-  expected-result: |
+   expected-result: |
     Пользователь видит товар в корзине
 
 - summary: |
     Просмотр товаров и подробной информации о товаре
-  requirement: |
+   requirement: |
     При открытой главной страницей пользователь должен видеть список товара, и при нажатии на товар видеть информацию о товаре
-  prerequisites:
+   prerequisites:
     Открыта главная страница
-  steps:
+   steps:
     - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Авторизуемся
     - Нажимаем на любой товар
-  expected-result: |
+   expected-result: |
     Пользователь видит товары и информацию о них
 
 - summary: |
     Фильтр товаров
-  requirement: |
+   requirement: |
     Пользователь при выборе фильтра товара должен видеть товар который он фильтровал
-  prerequisites:
+   prerequisites:
     Открыта страница с товарами
-  steps:
+   steps:
     - Ставим галочку в одном или нескольких чек-боксах
-  expected-result: |
+   expected-result: |
     Пользователь видит отфильтрованный товар
 
 - summary: |
     Фильтр по ключевому слову
-  requirement: |
+   requirement: |
     Пользователь при вводе ключевого слова должен видеть соответствующий список товаров 
-  prerequisites:
+   prerequisites:
     Пользователь находится на странице товаров
-  steps:
+   steps:
     - Вводим ключевое слово в поле ввода "Поиск"
-  expected-result: |
+   expected-result: |
     Пользователь видит список товаров согласно ключевого слова
 
 - summary: |
     Фильтр по категории
-  requirement: |
+   requirement: |
     Пользователь при выборе категории должен видеть соответствующий список товаров 
-  prerequisites:
+   prerequisites:
     Пользователь находится на странице товаров
-  steps:
+   steps:
     - Нажимаем на кнопку "Категория"
     - Выбираем из списка нужную категорию
-  expected-result: |
+   expected-result: |
     Пользователь видит список товаров согласно выбранной категории
 
 - summary: |
     Совместимость устройств на базе Windows
-  requirement: |
+   requirement: |
     Cайт должен работать на устройствах на базе Windows
-  prerequisites: |
+   prerequisites: |
     Desktop, Windows 10
-  steps:
+   steps:
     - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
+   expected-result: |
     Сайт доступен на данном устройстве
 
 - summary: |
     Совместимость устройств на базе Android
-  requirement: |
+   requirement: |
     Cайт должен работать на устройствах на базе Android
-  prerequisites: |
+   prerequisites: |
     Android (модели из DevTools)
-  steps:
+   steps:
     - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
+   expected-result: |
     Сайт доступен на данном устройстве
 
 - summary: |
     Совместимость устройств на базе iOS
-  requirement: |
+   requirement: |
     Cайт должен работать на устройствах на базе iOS
-  prerequisites: |
+   prerequisites: |
     iOS (модели из DevTools)
-  steps:
+   steps:
     - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
+   expected-result: |
     Сайт доступен на данном устройстве
 
 - summary: |
     Обработка большого количества траффика
-  requirement: |
+   requirement: |
     Сайт должен обрабатывать большое количество трафика
-  prerequisites:
+   prerequisites:
     Пользователь находится на странице товаров
-  steps:
+   steps:
     - Проверяем через DevTools скорость загрузки элементов страницы на разных сетях передачи данных
-  expected-result: |
+   expected-result: |
     Сайт обрабатывает информацию быстро
     
 - summary: |
     Совместимость браузеров
-  requirement: |
+   requirement: |
     Доступность сайта в GoogleChrome
-  prerequisites: |
+   prerequisites: |
     Windows 10 pro (64-bit)
-  steps:
+   steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в GoogleChrome ver.124.0 (64-bit)
-  expected-result: |
+   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
 - summary: |
     Совместимость браузеров
-  requirement: |
+   requirement: |
     Доступность сайта в MozillaFirefox
-  prerequisites: |
+   prerequisites: |
     Windows 10 pro (64-bit)
-  steps:
+   steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в MozillaFirefox ver.124.0 (64-bit)
-  expected-result: |
+   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
 - summary: |
     Совместимость браузеров
-  requirement: |
+   requirement: |
     Доступность сайта в YandexBrowser
-  prerequisites: |
+   prerequisites: |
     Windows 10 pro (64-bit)
-  steps:
+   steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в YandexBrowser ver.14.12 (64-bit)
-  expected-result: |
+   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
 - summary: |
     Совместимость браузеров
-  requirement: |
+   requirement: |
     Доступность сайта в Safari
-  prerequisites: |
+   prerequisites: |
     Windows 10 pro (64-bit)
-  steps:
+   steps:
     - Открываем [сайт](https://hexlet-products-store.vercel.app/) в Safari ver.5.1 (64-bit)
-  expected-result: |
+   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
 - summary: |
     Мобильная версия сайта
-  requirement: |
+   requirement: |
     Cайт должен иметь мобильную версию
-  prerequisites: |
+   prerequisites: |
     iOS
-  steps:
+   steps:
     - Открываем в браузере iOS [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
+   expected-result: |
     Сайт доступен на данном устройстве
 
 - summary: |
     Мобильная версия сайта
-  requirement: |
+   requirement: |
     Cайт должен иметь мобильную версию
-  prerequisites: |
+   prerequisites: |
     Android
-  steps:
+   steps:
     - Открываем в браузере Android [сайт](https://hexlet-products-store.vercel.app/)
-  expected-result: |
+   expected-result: |
     Сайт доступен на данном устройстве
 
 - summary: |
    Безопасность сайта
-  requirement: |
+   requirement: |
     Сайт должен быть безопасным и защищать данные пользователя
-  prerequisites: |
+   prerequisites: |
     Пользователь должен быть авторизован
-  steps:
+   steps:
     - Проверяем протокол
     - Проверяем в DevTools LocalStorage 
     - Проверка на наличие SQL-инъекций
     - Проверка на XSS
     - Проверка Man-in-the-Middle
-  expected-result: |
+   expected-result: |
     Сайт безопасен для использования и защищает данные пользователя
 
 - summary: |
    Верстка сайта
-  requirement: |
+   requirement: |
     Сайт должен выглядеть удобным для просмотра и использования
-    prerequisites: |
+   prerequisites: |
     Открыта главная страница сайта
-  expected-result: |
+   expected-result: |
     Верстка сайта выглядит удобно для просмотра и использования    
 
 - summary: |
     Единый стиль названий и описаний товаров
-  requirement: |
+   requirement: |
     Сайт должен иметь названия и описания товаров в одном стиле
-  prerequisites: |
+   prerequisites: |
     Открыта главная страница сайта
-  steps:
+   steps:
     - Проверяем название товара
     - Проверяем описание товара 
     - Проверяем пунктуационные и орфографические ошибки
-  expected-result: |
+   expected-result: |
     Сайт имеет названия и описания товаров в одном стиле
 
 - summary: |
     Ссылка на категорию в карточке товара
-  requirement: |
+   requirement: |
     Ссылка на категорию в карточке товара должна перенаправлять в фильтр по данной категории
-  prerequisites: |
+   prerequisites: |
     Открыта карточка товара
-  steps:
+   steps:
     - Нажимаем на ссылку категории
-  expected-result: |
+   expected-result: |
     Ссылка открывает фильтр по выбранной категории
 
 - summary: |
     Изображения без искажения
-  requirement: |
+   requirement: |
     Сайт должен иметь качественные изображения без искажения 
-  prerequisites: |
+   prerequisites: |
     Открыта главная страница сайта
-  expected-result: |
+   expected-result: |
     Все изображения смсотрятся гармонично без искажений
 
 - summary: |
     Выбор изображения в карточке товара
-  requirement: |
+   requirement: |
     Должна быть возможность выбора любого изображения товара в карточке товара
-  steps:
+   steps:
     - Переходим на сайт https://hexlet-products-store.vercel.app/products/1 
     - Открываем карточку любого товара
     - Кликаем по всем изображениям
-  expected-result: |
+   expected-result: |
     Все изображения кликабельны
 
 - summary: |
     Конвертация валюты
-  requirement: |
+   requirement: |
     -  Сайт должен конвертировать валюту на российский рубль для удобства покупки русскоговорящими пользователями
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Меняем язык на русский
-  expected-result: |
+   expected-result: |
     Цена товара выводится в рублях
 
 - summary: |
     Выбор количества покупаемого товара
-  requirement: |
+   requirement: |
     Пользователь должен иметь возможность выбрать количество покупаемого товара находясь в корзине
-  prerequisites:
+   prerequisites:
     Открыта главная страница
-  steps:
+   steps:
     - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Авторизуемся
     - Выбираем товар и нажимаем "В корзину"
     - Переходим в корзину
     - Выбираем количество товара
-  expected-result: |
+   expected-result: |
     Пользователь выбирает необходимое количество товара
 
 - summary: |
     Кнопки навигации
-  requirement: |
+   requirement: |
     -  Сайт должен иметь удобные кнопки навигации
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Нажимаем "следующая"
     - Нажимаем "предыдущая"
     - Нажимаем "магазин"
     - Нажимаем "корзина"
-  expected-result: |
+   expected-result: |
     Все кнопки корректно работают
 
 - summary: |
     Более двух изображений
-  requirement: |
+   requirement: |
     -  У каждого товара должно быть более двух изображении
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Открываем поочередно карточки товаров
-  expected-result: |
+   expected-result: |
     Каждый товар имеет в карточке товара 2 и более изображения
 
 - summary: |
     Остаток товара
-  requirement: |
+   requirement: |
     -  После покупки товара на главной странице должен быть показан актуальный остаток товара
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Добавляем любой товар в корзину
     - Оформляем заказ
     - Переходим на главную страницу магазина
     - Смотрим значение остатка товара
-  expected-result: |
+   expected-result: |
     Остаток товара скорректировался
 
 - summary: |
     Перевод страниц
-  requirement: |
+   requirement: |
     -  Сайт при переводе языка должен переводить все тексты
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Изменяем язык 
     - Переходим в карточки товаров
     - Проверяем перевод текстов
-  expected-result: |
+   expected-result: |
     Все тексты на страницах переводятся на выбранный язык
 
 - summary: |
     Переход на главную страницу магазина
-  requirement: |
+   requirement: |
     -  При нажатии на кнопку "Магазин" сайт переходит на главную страницу магазина
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Нажимаем "Следующая"
     - Нажимаем "Магазин"
-  expected-result: |
+   expected-result: |
     Сайт перешел на главную страницу 
 
 - summary: |
     Сброс фильтра категорий без перезагрузки страницы
-  requirement: |
+   requirement: |
     -  Во вкладке выбора категории фильтра должна быть кнопка "Сбросить фильтры категорий"
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Выбтраем в выпадающем меню категорию товара
     - Нажимаем "Сбросить фильтры"
-  expected-result: |
+   expected-result: |
     Сайт сбросил фильтры категорий товаров
 
 - summary: |
     Иконки стран языка сайта
-  requirement: |
+   requirement: |
     -  В выборе языка должны быть иконки флагов страны данного языка
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Нажимаем на выпадающее меню выбора языка
-  expected-result: |
+   expected-result: |
     Иконки корректно отображаются
 
 - summary: |
     Кнопка бренда магазина
-  requirement: |
+   requirement: |
     Кнопка бренда магазина в заголовке должна возвращать сайт на главную страницу
-  steps: |
+   steps: |
     - Открываем главную страницу сайта
     - Нажимаем на "Hexlet Store"
-  expected-result: |
+   expected-result: |
     Открывается главная страница магазина
-
