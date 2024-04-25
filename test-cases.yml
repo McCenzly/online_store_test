@@ -21,7 +21,7 @@
   test-data: |
     Нет данных
   steps:
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Авторизуемся
     - Нажимаем на любой товар
   expected-result: |
@@ -76,7 +76,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть в браузере сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Сайт доступен на данном устройстве
 
@@ -89,7 +89,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть в браузере сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Сайт доступен на данном устройстве
 
@@ -102,7 +102,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем в браузере [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть в браузере сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Сайт доступен на данном устройстве
 
@@ -128,7 +128,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в GoogleChrome ver.124.0 (64-bit)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
@@ -141,7 +141,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в MozillaFirefox ver.124.0 (64-bit)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
@@ -154,7 +154,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в YandexBrowser ver.14.12 (64-bit)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1 в YandexBrowser ver.14.12 (64-bit)
   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
@@ -167,7 +167,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем [сайт](https://hexlet-products-store.vercel.app/) в Safari ver.5.1 (64-bit)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1 в Safari ver.5.1 (64-bit)
   expected-result: |
     Корректная работа сайта на данных версиях браузеров
 
@@ -180,7 +180,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем в браузере iOS [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть в браузере iOS сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Сайт доступен на данном устройстве
 
@@ -193,7 +193,7 @@
   test-data: |
     Нет данных
   steps:
-    - Открываем в браузере Android [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть в браузере Android сайт https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Сайт доступен на данном устройстве
 
@@ -277,7 +277,7 @@
   test-data: |
     Нет данных
   steps:
-    - Переходим на сайт https://hexlet-products-store.vercel.app/products/1 
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Открываем карточку любого товара
     - Кликаем по всем изображениям
   expected-result: |
@@ -292,7 +292,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Нажимаем на выпадающее меню выбора языка
     - Меняем язык на русский
   expected-result: |
@@ -307,7 +307,7 @@
   test-data: |
     Нет данных
   steps:
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Выбираем товар и нажимаем "В корзину"
     - Переходим в корзину
     - Выбираем количество товара
@@ -323,7 +323,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Проверяем работу всех кнопок навигации
   expected-result: |
     Все кнопки корректно работают
@@ -337,7 +337,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Открываем поочередно карточки товаров
   expected-result: |
     Каждый товар имеет в карточке товара 2 и более изображения
@@ -351,7 +351,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Нажимаем "В корзину" на любой товар
     - Нажимаем "Корзина"
     - Нажимаем "Оформить заказ"
@@ -368,7 +368,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Изменяем язык 
     - Переходим в карточки товаров
     - Проверяем перевод текстов
@@ -384,7 +384,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Нажимаем "Следующая"
     - Нажимаем "Магазин"
   expected-result: |
@@ -399,7 +399,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Выбираем в выпадающем меню категорию товара
     - Нажимаем "Сбросить фильтры"
   expected-result: |
@@ -414,7 +414,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Нажимаем на выпадающее меню выбора языка
   expected-result: |
     Иконки корректно отображаются
@@ -428,7 +428,7 @@
   test-data: |
     Нет данных
   steps: |
-    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
+    - Открыть сайт https://hexlet-products-store.vercel.app/products/1
     - Переходим в любую другую страницу сайта
     - Нажимаем на "Hexlet Store"
   expected-result: |
