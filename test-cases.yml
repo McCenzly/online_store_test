@@ -292,6 +292,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Нажимаем на выпадающее меню выбора языка
     - Меняем язык на русский
   expected-result: |
@@ -307,7 +308,6 @@
     Нет данных
   steps:
     - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
-    - Авторизуемся
     - Выбираем товар и нажимаем "В корзину"
     - Переходим в корзину
     - Выбираем количество товара
@@ -323,6 +323,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Нажимаем "следующая"
     - Нажимаем "предыдущая"
     - Нажимаем "магазин"
@@ -339,6 +340,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Открываем поочередно карточки товаров
   expected-result: |
     Каждый товар имеет в карточке товара 2 и более изображения
@@ -352,6 +354,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Добавляем любой товар в корзину
     - Оформляем заказ
     - Переходим на главную страницу магазина
@@ -368,6 +371,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Изменяем язык 
     - Переходим в карточки товаров
     - Проверяем перевод текстов
@@ -383,6 +387,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Нажимаем "Следующая"
     - Нажимаем "Магазин"
   expected-result: |
@@ -397,6 +402,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Выбираем в выпадающем меню категорию товара
     - Нажимаем "Сбросить фильтры"
   expected-result: |
@@ -411,6 +417,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Нажимаем на выпадающее меню выбора языка
   expected-result: |
     Иконки корректно отображаются
@@ -424,6 +431,7 @@
   test-data: |
     Нет данных
   steps: |
+    - Заходим на [сайт](https://hexlet-products-store.vercel.app/)
     - Переходим в любую другую страницу сайта
     - Нажимаем на "Hexlet Store"
   expected-result: |
