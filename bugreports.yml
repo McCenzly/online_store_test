@@ -57,6 +57,21 @@
     Ссылка не кликабельна.
 
 - summary: |
+    Имеется неиспользуемый код
+  environment: |
+    Google Chrome  123.0.6312.120 (64 бит)
+    Windows 11 pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Переходим в DevTools
+    3. Переходим во вкладку "Coverage"
+    4. Нажимаем "Start instrumenting coverage and reload page"
+  expected-result: |
+    В результате проверки не обнаружилось неиспользованного кода
+  actual-result: |
+    Обнаружен неиспользуемый код CSS и JS
+
+- summary: |
     Изображения в карточке товара не выбираются при клике на них
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
