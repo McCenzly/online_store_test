@@ -19,44 +19,8 @@
   status: pass
 
 - summary: |
-    Совместимость устройств на базе Windows
-  status: pass
-
-- summary: |
-    Совместимость устройств на базе Android
-  status: pass
-
-- summary: |
-    Совместимость устройств на базе iOS
-  status: pass
-
-- summary: |
     Обработка большого количества траффика
-  status: fail
-
-- summary: |
-    Совместимость с браузером Google Chrome
   status: pass
-
-- summary: |
-    Совместимость с браузером Mozilla Firefox
-  status: pass
-
-- summary: |
-    Совместимость с браузером Yandex Browser
-  status: fail
-
-- summary: |
-    Совместимость с браузером Safari
-  status: fail
-
-- summary: |
-    Мобильная версия для iOS
-  status: fail
-
-- summary: |
-    Мобильная версия для Android
-  status: fail
 
 - summary: |
     Безопасность сайта
@@ -67,15 +31,11 @@
   status: fail
 
 - summary: |
-    Единые стили названий и описаний товаров
+    Единый стиль названий и описаний товаров
   status: fail
-
+  
 - summary: |
-    Ссылка на категорию в карточке товара
-  status: fail
-
-- summary: |
-    Изображения без искажения
+    Проверка работы ссылки на категорию товара в карточке товара
   status: fail
 
 - summary: |
@@ -83,31 +43,15 @@
   status: fail
 
 - summary: |
-    Конвертация валюты 
+   Изменение количества остатка товара после покупки
   status: fail
 
 - summary: |
-   Выбор количества покупаемого товара 
+   Проверка переводов текстов на странице при переключении языка
   status: fail
 
 - summary: |
-   Кнопки навигации
-  status: pass
-
-- summary: |
-   Более двух изображений
-  status: fail
-
-- summary: |
-   Остаток товара
-  status: fail
-
-- summary: |
-   Перевод страниц
-  status: fail
-
-- summary: |
-   Переход на главную страницу магазина
+   Проверка прехода сайта на главную страницу при клике на кнопку "Магазин"
   status: fail
 
 - summary: |
@@ -115,9 +59,9 @@
   status: fail
 
 - summary: |
-   Иконки страны языка
+   Проверка иконок стран языка сайта
   status: fail
 
 - summary: |
-    Кнопка бренда магазина
+    Проверка кнопки "Hexlet Store" 
   status: fail
