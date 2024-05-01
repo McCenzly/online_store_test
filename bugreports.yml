@@ -1,76 +1,5 @@
 ---
 - summary: |
-    Сайт долго загружает страницы
-  environment: |
-    Google Chrome 124.0.6367.60 (64-bit)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Открываем DevTools
-    3. Проверить скорость загрузки страницы с "No throtting"
-    4. Проверить скорость загрузки страницы с "Fast 3G"
-    5. Проверить скорость загрузки старницы с "Slow 3G"
-    6. Проверить скорость загрузки страницы с "Regular 4G"
-  expected-result: |
-    Страница загружается быстро
-  actual-result: |
-    Задержка вывода products?skip=0 658ms
-
-- summary: |
-    Сайт не работает в браузере Yandex
-  environment: |
-    Yandex Browser 14.12 (64-bit)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Открыть Yandex Browser
-    2. Зайти на страницу https://hexlet-products-store.vercel.app/
-  expected-result: |
-    Сайт открылся, видна вся необходимая информация
-  actual-result: |
-    Сайт не открылся
-
-- summary: |
-    Сайт не работает в браузере Safari
-  environment: |
-    Safari Browser 5.1 (64-bit)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Открыть Safari
-    2. Зайти на страницу https://hexlet-products-store.vercel.app/
-  expected-result: |
-    Сайт открылся, видна вся необходимая информация
-  actual-result: |
-    Сайт не открылся
-
-- summary: |
-    Сайт не работает на устройстве Android
-  environment: |
-    Realme 8; Galaxy Note 3; Galaxy Note II; Galaxy S III; Galaxy S8; Galaxy S9+; Galaxy Tab S4; Galaxy S8+; Galaxy S20 Ultra; Surface Pro 7; Surface Duo; Galaxy Z Fold 5; ASUS Zenbook Fold; Galaxy A51/71; Galaxy S5
-    Android ver. 13
-    Google Chrome 123.0.6312.120
-  steps-to-reproduce: |
-    1. Открыть браузер Google Chrome на устройстве Android
-    2. Зайти на страницу https://hexlet-products-store.vercel.app/
-  expected-result: |
-    Сайт открылся, видна вся необходимая информация, верстка адаптивна
-  actual-result: |
-    Мобильная верстка сайта не адаптивна под устройство Android
-
-- summary: |
-    Сайт не работает на устройстве iOs
-  environment: |
-    iPhone SE; iPhone XR; iPhone 12 Pro; iPhone 14 Pro Max; iPhone; iPad Mini; iPad Air;
-    iOs ver. 17.4.1.
-    Google Chrome 123.0.6312.120
-  steps-to-reproduce: |
-    1. Открыть браузер Google Chrome на устройстве iOS
-    2. Зайти на страницу https://hexlet-products-store.vercel.app/
-  expected-result: |
-    Сайт открылся, видна вся необходимая информация, верстка адаптивна
-  actual-result: |
-    Мобильная верстка сайта не адаптивна под устройство iOS
-
-- summary: |
     Сайт не безопасен
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
@@ -114,31 +43,18 @@
     Названия и описания товаров не в одном стиле, много ошибок пунктуации
 
 - summary: |
-    Ссылка на категорию в карточке товара не работает
+    Не осуществляется переход по ссылке на категорию из карточки товара
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
     Windows 11 pro
   steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Кликаем на ссылку категории данного товара
+    2. Открываем карточку любого товара
+    3. Кликаем на ссылку категории данного товара
   expected-result: |
     Ссылка кликабельна, сайт открывает фильтр по выбранной категории
   actual-result: |
     Ссылка не кликабельна.
-
-
-- summary: |
-    Изображения искажены
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Проверить все изображения на искажения
-  expected-result: |
-    Все изображения без искажений
-  actual-result: |
-    Многие карточки товара имеют искажения изображений
 
 - summary: |
     Изображения в карточке товара не выбираются при клике на них
@@ -153,46 +69,6 @@
     Все изображения кликабельны
   actual-result: |
     Изображения не кликабельны
-    
-- summary: |
-    Валюта не конвертируется при выборе Русского языка
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Поменять язык на русский
-  expected-result: |
-    Сайт перевел цену товара из долларов США в российские рубли согласно актуального курса
-  actual-result: |
-    Цена товара осталась в долларах США
-
-- summary: |
-    В корзине нельзя выбрать количество покупаемого товара
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Добавить товар в корзину
-    3. Выбрать количество товара от двух и более
-  expected-result: |
-    Есть возможность выбрать количество товара
-  actual-result: |
-    Количество товара нельзя выбрать находясь в корзине
-
-- summary: |
-    Некоторые карточки товара имеют только одно изображение
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Проверить все карточки товаров 
-  expected-result: |
-    Каротчки товара имеют от двух изображений
-  actual-result: |
-    Некоторые карточки товара имеют одно изображение
 
 - summary: |
     После покупки остаток товара на карточке не изменился 
@@ -265,17 +141,15 @@
     Иконка Английского языка отсутствует
     
 - summary: |
-    Кнопка бренда магазина "Hexlet Store" не перенаправляет на главную страницу
+    Кнопка "Hexlet Store" не перенаправляет на главную страницу
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
     Windows 11 pro
   steps-to-reproduce: |
     1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Нажать "Следующая"
     2. Нажать "Hexlet Store"
   expected-result: |
     Сайт перешел на главную страницу
   actual-result: |
     Сайт не реагирует на кнопку "Hexlet Store"
-    
-
-    
