@@ -1,25 +1,5 @@
 test-cases:
   - summary: |
-     Обработка большого количества траффика
-    status: pass
-
-  - summary: |
-     Совместимость с браузером Yandex Browser
-    status: fail
-
-  - summary: |
-     Совместимость с браузером Safari
-    status: fail
-
-  - summary: |
-     Мобильная версия для iOS
-    status: pass
-
-  - summary: |
-     Мобильная версия для Android
-    status: pass
-
-  - summary: |
      Безопасность сайта
     status: fail
 
@@ -32,11 +12,7 @@ test-cases:
     status: fail
 
   - summary: |
-     Ссылка на категорию в карточке товара
-    status: pass
-
-  - summary: |
-     Изображения без искажения
+     Проверка работы ссылки на категорию товара в карточке товара
     status: pass
 
   - summary: |
@@ -44,27 +20,15 @@ test-cases:
     status: pass
 
   - summary: |
-     Конвертация валюты 
+     Изменение количества остатка товара после покупки
     status: fail
 
   - summary: |
-     Выбор количества покупаемого товара 
+     Проверка переводов текстов на странице при переключении языка
     status: fail
 
   - summary: |
-     Более двух изображений
-    status: fail
-
-  - summary: |
-     Остаток товара
-    status: fail
-
-  - summary: |
-     Перевод страниц
-    status: fail
-
-  - summary: |
-     Переход на главную страницу магазина
+     Проверка прехода сайта на главную страницу при клике на кнопку "Магазин"
     status: pass
 
   - summary: |
@@ -72,11 +36,11 @@ test-cases:
     status: pass
 
   - summary: |
-     Иконки страны языка
+     Проверка иконок стран языка сайта
     status: fail
 
   - summary: |
-     Кнопка бренда магазина
+     Проверка кнопки "Hexlet Store"
     status: pass
     
 bugreports:
