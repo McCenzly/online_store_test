@@ -4,7 +4,11 @@ test-cases:
     status: fail
 
   - summary: |
-     Верстка сайта
+     Обработка большого количества траффика
+    status: fail
+
+  - summary: |
+     Значения количества купленного и оставшегося товара не выровняны в таблице
     status: pass
 
   - summary: |
@@ -78,3 +82,49 @@ bugreports:
       Чек-бокс "Фильтр" работает корректно
     actual-result: |
       Чек-бокс "Фильтр" не работает
+
+  - summary: |
+      Сайт использует сторонние файлы cookie
+    environment: |
+      Google Chrome  123.0.6312.120 (64 бит)
+      Windows 11 pro
+    steps-to-reproduce: |
+      1. Перейти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Открыть DevTools
+      3. Проверить файлы cookie во вкладке application
+    expected-result: |
+      Файлы cookie безопасны 
+    actual-result: |
+      Присутствуют сторонние файлы cookie с параметром SameSite=None
+
+  - summary: |
+      Кнопки "Delete" в корзине не выравнены
+    environment: |
+      Google Chrome  123.0.6312.120 (64 бит)
+      Windows 11 pro
+    steps-to-reproduce: |
+      1. Перейти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Добавить в корзину несколько разных товаров
+      3. Перейти в корзину
+    expected-result: |
+      Верстка адаптивна 
+    actual-result: |
+      Кнопки "Delete" не выравнены
+
+  - summary: |
+      Корзина сайта не очищается
+    environment: |
+      Google Chrome  123.0.6312.120 (64 бит)
+      Windows 11 pro
+    steps-to-reproduce: |
+      1. Перейти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      2. Добавить в корзину товар
+      3. Перейти в корзину
+      4. Нажать "Очистить корзину"
+      5. Нажать "Hexlet Store" 
+      6. Нажать "Магазин"
+    expected-result: |
+      Корзина очистилась 
+    actual-result: |
+      После удаления товаров из корзины при нажатии "Hexlet Store" - корзина очищается, но при нажатии на "Магазин" - товары вновь появляются в корзине
+ 
