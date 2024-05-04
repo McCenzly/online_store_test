@@ -1,5 +1,9 @@
 test-cases:
   - summary: |
+    Возможность оформить заказ
+  status: fail
+  
+  - summary: |
      Безопасность сайта
     status: fail
 
