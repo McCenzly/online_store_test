@@ -7,6 +7,10 @@
   status: pass
 
 - summary: |
+    Возможность оформить заказ
+  status: fail
+
+- summary: |
     Фильтр товаров
   status: pass
 
