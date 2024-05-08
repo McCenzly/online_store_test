@@ -16,23 +16,6 @@
     Заказ не оформляется, на сервер не отправляется POST запрос, вместо этого него запрос GET со статусом 500
 
 - summary: |
-    Сайт не безопасен
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Проверяем протокол защиты
-    3. Проверяем в DevTools LocalStorage 
-    4. Проверяем на наличие SQL-инъекций
-    5. Проверка на XSS
-    6. Проверка Man-in-the-Middle
-  expected-result: |
-    Сайт безопасен, данные пользователя под защитой.
-  actual-result: |
-    Поле фильтрования цены имеет Cross-Site Scripting атаку
-
-- summary: |
     Значения количества купленного и оставшегося товара не выровняны в таблице
   environment: |
     Google Chrome  123.0.6312.120 (64 бит)
@@ -72,21 +55,6 @@
     Ссылка кликабельна, сайт открывает фильтр по выбранной категории
   actual-result: |
     Ссылка не кликабельна.
-
-- summary: |
-    Имеется неиспользуемый код
-  environment: |
-    Google Chrome  123.0.6312.120 (64 бит)
-    Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Переходим в DevTools
-    3. Переходим во вкладку "Coverage"
-    4. Нажимаем "Start instrumenting coverage and reload page"
-  expected-result: |
-    В результате проверки не обнаружилось неиспользованного кода
-  actual-result: |
-    Обнаружен неиспользуемый код CSS и JS
 
 - summary: |
     Изображения в карточке товара не выбираются при клике на них
