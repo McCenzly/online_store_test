@@ -84,7 +84,7 @@ bugreports:
       Чек-бокс "Фильтр" не работает
 
   - summary: |
-      Кнопки "Delete" в корзине не выравнены
+      Кнопки "Delete" в корзине не выравнены по вертикали
     environment: |
       Google Chrome  123.0.6312.120 (64 бит)
       Windows 11 pro
@@ -95,7 +95,7 @@ bugreports:
     expected-result: |
       Верстка адаптивна 
     actual-result: |
-      Кнопки "Delete" не выравнены
+      Кнопки "Delete" не выравнены по вертикали
 
   - summary: |
       Корзина сайта не очищается
